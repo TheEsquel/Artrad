@@ -126,36 +126,29 @@ main {
     main .container .carousel {
       width: 90%;
       margin: 10px auto; }
-    main .container #exhibition_wrapper {
+    main .container #exhibitionWrapper {
       display: flex;
       flex-direction: column;
       width: 90%;
       margin: auto;
       padding: 10px; }
-      main .container #exhibition_wrapper #exhibition_intro {
-        text-indent: 3em; }
-      main .container #exhibition_wrapper .exhibition_section {
+      main .container #exhibitionWrapper .exhibitionSection {
         border-bottom: 1px black;
         margin-top: 10px; }
-        main .container #exhibition_wrapper .exhibition_section .exhibition_year {
+        main .container #exhibitionWrapper .exhibitionSection .exhibitionYear {
           font-size: 1.4em;
           color: #fb7268;
           padding: 0 10px;
-          display: inline-block; }
-        main .container #exhibition_wrapper .exhibition_section .exhibitionPictures {
+          display: block; }
+        main .container #exhibitionWrapper .exhibitionSection .exhibitionPictures {
           display: flex;
           justify-content: space-around;
           padding-top: 20px;
           flex-wrap: wrap; }
-          main .container #exhibition_wrapper .exhibition_section .exhibitionPictures .exhibition_horizontal {
-            width: 330px;
-            height: 220px;
-            background-size: cover;
-            margin-bottom: 15px; }
-          main .container #exhibition_wrapper .exhibition_section .exhibitionPictures .exhibition_vertical {
-            width: 170px;
-            height: 320px;
-            background-size: cover; }
+          main .container #exhibitionWrapper .exhibitionSection .exhibitionPictures .exhibitionPictureItem {
+            margin: 20px 0; }
+        main .container #exhibitionWrapper .exhibitionSection .exhibitionText {
+          text-indent: 4em; }
     main .container #vertical {
       float: left;
       list-style-type: none;

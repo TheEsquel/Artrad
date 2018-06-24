@@ -134,36 +134,29 @@ main
     .carousel
       width: 90%
       margin: 10px auto
-    #exhibition_wrapper
+    #exhibitionWrapper
       display: flex
       flex-direction: column
       width: 90%
       margin: auto
       padding: 10px
-      #exhibition_intro
-        text-indent: 3em
-      .exhibition_section
+      .exhibitionSection
         border-bottom: 1px  black
         margin-top: 10px
-        .exhibition_year
+        .exhibitionYear
           font-size: 1.4em
           color: #fb7268
           padding:  0 10px
-          display: inline-block
+          display: block
         .exhibitionPictures
           display: flex
           justify-content: space-around
           padding-top: 20px
           flex-wrap: wrap
-          .exhibition_horizontal
-            width: 330px
-            height: 220px
-            background-size: cover
-            margin-bottom: 15px
-          .exhibition_vertical
-            width: 170px
-            height: 320px
-            background-size: cover
+          .exhibitionPictureItem
+            margin: 20px 0
+        .exhibitionText
+          text-indent: 4em
     #vertical
       a
         text-decoration: none
