@@ -129,7 +129,7 @@ main
     background-color: white
     height: 100%
     padding: 0
-    width: 60% 
+    width: 60%
     min-width: 800px
     .carousel
       width: 90%
@@ -153,10 +153,14 @@ main
           justify-content: space-around
           padding-top: 20px
           flex-wrap: wrap
-          .exhibitionPictureItem
+          .pictureItem
             margin: 20px 0
+            cursor: pointer
         .exhibitionText
           text-indent: 4em
+
+
+
     #vertical
       a
         text-decoration: none
@@ -337,6 +341,32 @@ footer
       content: '✖'
 [id*='modal_']:target
   display: block
+
+  /*
+    Стили для всплывающей картинки  *.
+
+.popup
+  position: fixed
+  height: 100%
+  width: 100%
+  top: 0
+  left: 0
+  display: none
+  text-align: center
+.popup_bg
+  background: rgba(0,0,0,0.6)
+  position: absolute
+  z-index: 1
+  height: 100%
+  width: 100%
+.popupImage
+  position: relative
+  z-index: 2
+  max-height: 90%
+  max-width: 90%
+
+
+
 
 
 //.button_lined

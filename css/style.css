@@ -145,8 +145,9 @@ main {
           justify-content: space-around;
           padding-top: 20px;
           flex-wrap: wrap; }
-          main .container #exhibitionWrapper .exhibitionSection .exhibitionPictures .exhibitionPictureItem {
-            margin: 20px 0; }
+          main .container #exhibitionWrapper .exhibitionSection .exhibitionPictures .pictureItem {
+            margin: 20px 0;
+            cursor: pointer; }
         main .container #exhibitionWrapper .exhibitionSection .exhibitionText {
           text-indent: 4em; }
     main .container #vertical {
@@ -320,6 +321,29 @@ footer .container {
       content: "✖"; }
 
 [id*='modal_']:target {
-  display: block; }
+  display: block;
+  /* Стили для всплывающей картинки  *. */ }
+
+.popup {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center; }
+
+.popup_bg {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%; }
+
+.popupImage {
+  position: relative;
+  z-index: 2;
+  max-height: 90%;
+  max-width: 90%; }
 
 /*# sourceMappingURL=style.css.map */

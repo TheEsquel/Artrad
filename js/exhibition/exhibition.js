@@ -8,9 +8,9 @@ class Exhibition {
 
         //  забираем из переданного объекта все данные
         let sectionID = 'section'+ key,
-            exhibitionYear = objectJSON.year,
-            exhibitionText = objectJSON.text,
-            exhibitionPictures = objectJSON.pictures;
+            year = objectJSON.year,
+            text = objectJSON.text,
+            picture = objectJSON.pictures;
 
     // создаем элементы  секций
         let $exhibitionWrapper = $('#exhibitionWrapper');
@@ -21,27 +21,37 @@ class Exhibition {
         $exhibitionSection.attr('id', sectionID);
     // год  выставки
         let $exhibitionYear = $('<span />', {
-            text: exhibitionYear,
+            text: year,
             class: "exhibitionYear"
         });
     // текст
         let $exhibitionText = $('<p />', {
-           text: exhibitionText,
+           text: text,
            class: "exhibitionText"
         });
-    //  изображения
+    //  создание изображения
         let $exhibitionPictures = $('<div />',{
            class: "exhibitionPictures"
         });
-        console.log(exhibitionPictures);
-        for(key in exhibitionPictures){
-            console.log(exhibitionPictures[key]);
-            let urlPrev = exhibitionPictures[key].urlPrev;
-            let $exhibitionPicture = $('<img />',{
+        for(key in picture){
+            let urlPrev = picture[key].urlPrev;
+            let $pictureElement = $('<img />',{
                src: urlPrev,
-               class: "exhibitionPictureItem"
+               class: "pictureItem",
+               'data-id': key
             });
-            $exhibitionPicture.appendTo($exhibitionPictures);
+
+    //  навешиваем открытие всплывающей картинки
+            $('.pictureItem').on('click', function () {
+                let id = $(this).attr('data-id');
+                console.log(key);
+                let imageSrc = picture[id].url;
+                $('body').append(`<div class="popup"><div class="popupBG"></div><img src="${imageSrc}" alt="" class="popupImage"></div>`)
+                $('.popup').fadeIn(500);
+
+            });
+
+            $pictureElement.appendTo($exhibitionPictures);
         }
 
         //  выводим  элементы на страницу

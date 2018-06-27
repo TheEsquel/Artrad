@@ -19,7 +19,7 @@
         {
           "0":
             {
-              "url": "",
+              "url": "./img/exhibition/exhibition_ 0.JPG",
               "urlPrev": "./img/exhibition/prev/exhibition_0_prev.jpg",
               "description": "",
               "height": "",
@@ -27,7 +27,7 @@
             },
           "1":
           {
-            "url": "",
+            "url": "./img/exhibition/exhibition_ 1.JPG",
             "urlPrev": "./img/exhibition/prev/exhibition_1_prev.jpg",
             "description": "",
             "height": "",
@@ -35,7 +35,7 @@
           },
           "2":
           {
-            "url": "",
+            "url": "./img/exhibition/exhibition_ 2.JPG",
             "urlPrev": "./img/exhibition/prev/exhibition_2_prev.jpg",
             "description": "",
             "height": "",
@@ -43,7 +43,7 @@
           },
           "3":
           {
-            "url": "",
+            "url": "./img/exhibition/exhibition_ 3.JPG",
             "urlPrev": "./img/exhibition/prev/exhibition_3_prev.jpg",
             "description": "",
             "height": "",
@@ -58,7 +58,7 @@
       "year": "1991",
       "pictures":
         {
-          "0":
+          "0 ":
             {
               "url": "",
               "description": "",
