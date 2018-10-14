@@ -161,6 +161,7 @@ main
 
 
 
+
     #vertical
       a
         text-decoration: none
@@ -215,17 +216,26 @@ main
     .order-wrapper
       display: flex
       flex-direction: column
-      margin: 0px 50px
+      margin: 0px 50px 0px 100px
       .order-text
         margin: 15px 0
     .order-filter
       display: flex
-
-      .order-filter-button
-        height: 100px
-        border-radius: 30%
-        background-color: #4e4f4d
-        color: #f8f8f8
+      justify-content: space-around
+      .buyButton
+        width: 200px
+        height: 50px
+        border: solid #4e4f4d 2px
+        background-color: transparent
+        font-family: "Calibri Light", serif, bold
+        font-size: 1.2em
+        color: #4e4f4d
+        text-decoration: none
+        text-align: center
+        padding-top: 7px
+        &:hover
+          background-color: #4e4f4d
+          color: #f7f7f7
 
       .order-filter-preview
         display: flex

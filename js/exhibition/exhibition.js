@@ -44,7 +44,8 @@ class Exhibition {
     //  навешиваем открытие всплывающей картинки
             $('.pictureItem').on('click', function () {
                 let id = $(this).attr('data-id');
-                console.log(key);
+                console.log(key
+                );
                 let imageSrc = picture[id].url;
                 $('body').append(`<div class="popup"><div class="popupBG"></div><img src="${imageSrc}" alt="" class="popupImage"></div>`)
                 $('.popup').fadeIn(500);

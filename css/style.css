@@ -201,16 +201,26 @@ main {
     main .container .order-wrapper {
       display: flex;
       flex-direction: column;
-      margin: 0px 50px; }
+      margin: 0px 50px 0px 100px; }
       main .container .order-wrapper .order-text {
         margin: 15px 0; }
     main .container .order-filter {
-      display: flex; }
-      main .container .order-filter .order-filter-button {
-        height: 100px;
-        border-radius: 30%;
-        background-color: #4e4f4d;
-        color: #f8f8f8; }
+      display: flex;
+      justify-content: space-around; }
+      main .container .order-filter .buyButton {
+        width: 200px;
+        height: 50px;
+        border: solid #4e4f4d 2px;
+        background-color: transparent;
+        font-family: "Calibri Light", serif, bold;
+        font-size: 1.2em;
+        color: #4e4f4d;
+        text-decoration: none;
+        text-align: center;
+        padding-top: 7px; }
+        main .container .order-filter .buyButton:hover {
+          background-color: #4e4f4d;
+          color: #f7f7f7; }
       main .container .order-filter .order-filter-preview {
         display: flex;
         justify-content: space-between;
